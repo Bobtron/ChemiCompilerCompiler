@@ -2,9 +2,9 @@
 
 # ChemiCompilerCompiler
 
-#### A Program to write programs for the ChemiCompiler in Goonstation SS13
+### A Program to write programs for the ChemiCompiler in Goonstation SS13
 
-##### See the guide to the ChemiCompiler in the wiki here: https://wiki.ss13.co/ChemiCompiler
+#### See the guide to the ChemiCompiler in the wiki here: https://wiki.ss13.co/ChemiCompiler
 
 The ChemiCompiler inside of Goonstation streamlines the chemical making process, whether
 you're trying to make beaker bombs, or poisons. However, there are two barriers to use: understanding the language of the ChemiCompiler,
@@ -21,7 +21,7 @@ The three commands are as listed:
 
 `ISOLATE 4 3 10 1` will isolate 10 units of reagent number 1 from beaker 4 (source) to beaker 3 (target)
 
-##### To use
+#### To use
 
 Go into the Standard folder, and run Driver.py. Input the name of your text file containing the commands, and the program will
 print out the resulting ChemFuck.
