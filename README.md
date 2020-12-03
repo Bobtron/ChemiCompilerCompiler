@@ -17,7 +17,7 @@ The three commands are as listed:
 
 `MOVE 1 2 25` will move 25 units of reagent from beaker 1 (source) to beaker 2 (target)
 
-`HEAT 9 400` will heat beaker 9 (source) to 400 degrees K
+`TEMP 9 400` will heat/cool beaker 9 (source) to 400 degrees K
 
 `ISOLATE 4 3 10 1` will isolate 10 units of reagent number 1 from beaker 4 (source) to beaker 3 (target)
 
