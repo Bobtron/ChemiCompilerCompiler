@@ -17,14 +17,19 @@ The three commands are as listed:
 
 `MOVE Sx Tx Ax` where Sx is the source beaker, Tx is the target beaker, and Ax is the amount to move.
 
+`TEMP Sx K` where Sx is the source beaker to be heated, and K is the temperature which the beaker will be heated to.
+
+`ISOLATE Sx Tx Ax Reag` where Sx is the source beaker, Tx is the target beaker, Ax is the amount to move, and Reag is the reagent to move (in order, where the first reagent is 1, and so forth)
+
 Examples:
 
 `MOVE 1 2 25` will move 25 units of reagent from beaker 1 (source) to beaker 2 (target)
+
 `TEMP 9 400` will heat/cool beaker 9 (source) to 400 degrees K
+
 `ISOLATE 4 3 10 1` will isolate 10 units of reagent number 1 from beaker 4 (source) to beaker 3 (target)
 
 #### To use
 
 Go into the Standard folder, and run Driver.py. Input the name of your text file containing the commands, and the program will
-print out the resulting ChemFuck.
-
+print out the resulting ChemFuck. See textfiles for examples.
