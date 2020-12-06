@@ -117,19 +117,26 @@ if __name__ == "__main__":
             min_reps = math.floor(100 / sum(beaker))
 
     print("\nCan make recipe " + str(min_reps) + " times.")
+    once = []
+    total = []
 
     for i in range(len(all_beakers)):
         # string = "Beaker " + str(i + 1) + ": "
         beaker_size = 50 if sum(all_beakers[i]) * min_reps <= 50 else 100
-        once_str = "("
-        total_str = ""
-        for reagent in all_beakers[i]:
-            once_str += str(reagent) + "+"
-            total_str += str(reagent * min_reps) + "+"
-        once_str = once_str[:-1] + ")"
-        total_str = total_str[:-1]
+
+        once_str = "+".join([str(i) for i in all_beakers[i]])
+        total_str = "+".join([str(i * min_reps) for i in all_beakers[i]])
+        once.append(once_str)
+        total.append(total_str + "/" + str(beaker_size))
         string = once_str + " " + total_str + "/" + str(beaker_size)
         print(string)
+
+    print()
+    for i in once:
+        print(i)
+    print()
+    for i in total:
+        print(i)
 
     # print(min_reps)
 #
